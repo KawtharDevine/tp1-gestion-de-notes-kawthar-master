@@ -31,6 +31,8 @@ public class Student {
    */
   public void addResult(String teachingUnitName, Grade grade){
     // TODO : add code
+    TeachingUnitResult teachingUnitResult = new TeachingUnitResult(teachingUnitName, grade);
+    this.results.add(teachingUnitResult);
   }
 
   /**
