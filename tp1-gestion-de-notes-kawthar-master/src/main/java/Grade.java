@@ -29,7 +29,7 @@ public class Grade {
 
   public double getValue() {
     // TODO : change code
-    return value;
+    return value;// avant c'était (return 0.;)
   }
 
   /**
@@ -39,7 +39,7 @@ public class Grade {
   @Override
   public String toString() {
     // TODO : change code
-    return null;
+    return value + "/" + MAXIMUM_GRADE; // avant : return null;
   }
 
   /**
