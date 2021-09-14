@@ -43,7 +43,7 @@ public class Cohort {
    */
   public void printStudentsResults(){
     // TODO : add code
-    System.out.println(this.name);
+    System.out.println(this.name + "\n");
     for (int i = 0; i < this.students.size(); i++){
       this.students.get(i).printResults();
     }

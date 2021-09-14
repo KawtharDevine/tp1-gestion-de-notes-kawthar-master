@@ -86,7 +86,7 @@ public class Student {
     for (int i = 0; i < this.results.size(); i++){
       a += this.results.get(i).toString() + "\n";
     }
-    a += "Note Moyenne : " + this.averageGrade().toString() + "\n";
+    a += "Note Moyenne : " + this.averageGrade().toString() + "\n" + "\n";
     System.out.println(a);
   }
 
