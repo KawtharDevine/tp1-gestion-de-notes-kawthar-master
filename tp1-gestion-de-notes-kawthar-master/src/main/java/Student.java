@@ -82,11 +82,12 @@ public class Student {
    */
   public void printResults(){
     // TODO : add code
-    System.out.println(this.firstName + " " + this.lastName);
-    for (int i = 0; i < results.size(); i++){
-      System.out.println(results.get(i));
+    String a = this.firstName + " " + this.lastName + "\n";
+    for (int i = 0; i < this.results.size(); i++){
+      a += this.results.get(i).toString() + "\n";
     }
-    System.out.println("Note Moyenne : " + this.averageGrade());
+    a += "Note Moyenne : " + this.averageGrade().toString() + "\n";
+    System.out.println(a);
   }
 
 

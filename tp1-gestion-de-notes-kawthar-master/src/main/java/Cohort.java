@@ -25,6 +25,7 @@ public class Cohort {
    */
   public void addStudent(Student student){
     // TODO : add code
+    this.students.add(student);
   }
 
   /**
@@ -33,7 +34,7 @@ public class Cohort {
    */
   public List<Student> getStudents(){
     // TODO : change code
-    return null;
+    return students;
   }
 
   /**
@@ -42,6 +43,11 @@ public class Cohort {
    */
   public void printStudentsResults(){
     // TODO : add code
+    System.out.println(this.name);
+    for (int i = 0; i < this.students.size(); i++){
+      this.students.get(i).printResults();
+    }
+
   }
 
   /**
@@ -51,6 +57,10 @@ public class Cohort {
   @Override
   public String toString() {
     // TODO : change code
-    return null;
+    String students = this.students.get(0).toString();
+    for (int i =1; i < this.students.size(); i++){
+      students += " ; " + this.students.get(i).toString();
+    }
+    return this.name + " : " + students;
   }
 }
