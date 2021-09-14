@@ -50,17 +50,15 @@ public class Grade {
    * @param grades a list of grades
    * @return a grade corresponding to the mean of grade in {@code grades}
    */
-  //public static Grade averageGrade(List<Grade> grades){
-    // TODO : change code
-    // Grade add = 0;
-    // Grade moyenne = 0;
-    //int size = grades.size();
-    //for (int i=0; i<size; i++) {
-    //  add += grades.get(i);
-    //}
-    //moyenne = add/size;
-    //return moyenne;
-  //}
+  public static Grade averageGrade(List<Grade> grades){
+     //TODO : change code
+    double add = grades.get(0).getValue();
+    for (int i=1; i<grades.size(); i++) {
+      add += grades.get(i).getValue();
+    }
+    Grade mean = new Grade(add/ grades.size());
+    return mean;
+  }
 
   /**
    * Determines whether or not two grades are equal. Two instances of Grade are equal if the values
