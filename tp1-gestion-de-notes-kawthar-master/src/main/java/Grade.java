@@ -29,7 +29,7 @@ public class Grade {
 
   public double getValue() {
     // TODO : change code
-    return 0.;
+    return value;
   }
 
   /**
