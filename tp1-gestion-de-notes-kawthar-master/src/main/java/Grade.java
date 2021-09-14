@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.List;
 
 /**
@@ -49,10 +50,17 @@ public class Grade {
    * @param grades a list of grades
    * @return a grade corresponding to the mean of grade in {@code grades}
    */
-  public static Grade averageGrade(List<Grade> grades){
+  //public static Grade averageGrade(List<Grade> grades){
     // TODO : change code
-    return null;
-  }
+    // Grade add = 0;
+    // Grade moyenne = 0;
+    //int size = grades.size();
+    //for (int i=0; i<size; i++) {
+    //  add += grades.get(i);
+    //}
+    //moyenne = add/size;
+    //return moyenne;
+  //}
 
   /**
    * Determines whether or not two grades are equal. Two instances of Grade are equal if the values
