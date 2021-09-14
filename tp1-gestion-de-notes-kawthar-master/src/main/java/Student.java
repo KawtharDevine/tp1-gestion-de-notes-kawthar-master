@@ -42,7 +42,7 @@ public class Student {
   @Override
   public String toString() {
     // TODO : change code
-    return null;
+    return this.firstName + " " + this.lastName;
   }
 
 
@@ -53,7 +53,11 @@ public class Student {
    */
   public List<Grade> getGrades(){
     // TODO : change code
-    return null;
+    List<Grade> grades = new ArrayList<>();
+    for (int i = 0; i < this.results.size(); i++){
+      grades.add(this.results.get(i).getGrade());
+    }
+    return grades;
   }
 
   /**
@@ -63,7 +67,13 @@ public class Student {
    */
   public Grade averageGrade() {
     // TODO : change code
-    return null;
+    double add = 0;
+    List<Grade> grades = this.getGrades();
+    for (int i = 0; i < grades.size(); i++){
+      add += grades.get(i).getValue();
+    }
+    Grade mean = new Grade(add/grades.size());
+    return mean;
   }
 
   /**
@@ -72,6 +82,11 @@ public class Student {
    */
   public void printResults(){
     // TODO : add code
+    System.out.println(this.firstName + " " + this.lastName);
+    for (int i = 0; i < results.size(); i++){
+      System.out.println(results.get(i));
+    }
+    System.out.println("Note Moyenne : " + this.averageGrade());
   }
 
 
